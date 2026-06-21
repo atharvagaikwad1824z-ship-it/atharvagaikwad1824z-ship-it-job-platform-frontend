@@ -1,0 +1,139 @@
+.cand-dashboard {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.cand-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+
+.cand-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Stats cards */
+.cand-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.6rem;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #007bff;
+  margin: 0;
+}
+
+.stat-card p {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #444;
+}
+
+/* Table */
+.cand-table-box {
+  background: white;
+  padding: 1.6rem;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+.table-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.cand-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cand-table th,
+.cand-table td {
+  padding: 0.9rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.cand-table th {
+  font-weight: 900;
+  color: #222;
+  background: #f8f9fa;
+}
+
+/* Resume link */
+.resume-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.resume-link:hover {
+  text-decoration: underline;
+}
+
+.no-resume {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Status badge */
+.status-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.status-badge.applied {
+  background: rgba(255, 193, 7, 0.2);
+  color: #d39e00;
+}
+
+.status-badge.reviewed {
+  background: rgba(0, 123, 255, 0.2);
+  color: #007bff;
+}
+
+.status-badge.accepted {
+  background: rgba(40, 167, 69, 0.2);
+  color: #28a745;
+}
+
+.status-badge.rejected {
+  background: rgba(220, 53, 69, 0.2);
+  color: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .cand-stats {
+    grid-template-columns: 1fr;
+  }
+}
