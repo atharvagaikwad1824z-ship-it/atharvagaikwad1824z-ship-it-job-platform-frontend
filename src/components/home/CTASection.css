@@ -1,0 +1,38 @@
+.cta {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-box {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem;
+  border-radius: 18px;
+  background: #f8f9fa;
+  border: 1px solid #eee;
+}
+
+.cta-box h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.cta-box p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  padding: 0.9rem 1.5rem;
+  background: #007bff;
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #0056b3;
+}

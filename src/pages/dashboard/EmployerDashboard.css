@@ -1,0 +1,140 @@
+.emp-dashboard {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.emp-title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 0.4rem;
+  color: #222;
+}
+
+.emp-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Stats cards */
+.emp-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.6rem;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #007bff;
+  margin: 0;
+}
+
+.stat-card p {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #444;
+}
+
+/* Table */
+.emp-table-box {
+  background: white;
+  padding: 1.6rem;
+  border-radius: 14px;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.table-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.emp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.emp-table th,
+.emp-table td {
+  padding: 0.9rem;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.emp-table th {
+  font-weight: 900;
+  color: #222;
+  background: #f8f9fa;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn.view {
+  background: rgba(0, 123, 255, 0.15);
+  color: #007bff;
+}
+
+.btn.view:hover {
+  background: rgba(0, 123, 255, 0.25);
+}
+
+.btn.edit {
+  background: rgba(40, 167, 69, 0.15);
+  color: #28a745;
+}
+
+.btn.edit:hover {
+  background: rgba(40, 167, 69, 0.25);
+}
+
+.btn.delete {
+  background: rgba(220, 53, 69, 0.15);
+  color: #dc3545;
+}
+
+.btn.delete:hover {
+  background: rgba(220, 53, 69, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .emp-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .emp-table-box {
+    overflow-x: auto;
+  }
+}
